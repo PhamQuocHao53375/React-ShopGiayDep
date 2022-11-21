@@ -6,7 +6,7 @@ import Navbar from "./Navbar"
 const Header = ({ CartItem }) => {
   return (
     <>
-    <Navbar/>
+      <Navbar/>
       <Search CartItem={CartItem} />
       
     </>

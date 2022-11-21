@@ -14,6 +14,7 @@ function App() {
   const { shopItems } = Sdata
 
   const [CartItem, setCartItem] = useState([])
+  
   const addToCart = (product) => {
     const productExit = CartItem.find((item) => item.id === product.id)
     if (productExit) {

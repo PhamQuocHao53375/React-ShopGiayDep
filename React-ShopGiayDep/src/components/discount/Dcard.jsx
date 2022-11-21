@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Ddata from "./Ddata"
 import "../newarrivals/style.css"
 
-const Dcard = () => {
+const Dcard = ({productItems,addToCart}) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -25,7 +25,7 @@ const Dcard = () => {
                 </div>
                 <h4>{value.name}</h4>
                 <span>{value.price}</span>
-                <button>
+                <button onClick={() => addToCart(productItems)}>
                       <i className='fa fa-plus big-discout-button'></i>
                 </button>
               </div>
