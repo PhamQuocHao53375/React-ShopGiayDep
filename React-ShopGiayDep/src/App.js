@@ -7,6 +7,9 @@ import Data from "./components/Data"
 import Cart from "./common/Cart/Cart"
 import Footer from "./common/footer/Footer"
 import Sdata from "./components/shops/Sdata"
+import  { Component } from 'react'
+import AllPostContainer from './containers/AllPostContainer';
+import PostFormContainer from './containers/PostFormContainer';
 
 function App() {
  
@@ -44,6 +47,8 @@ function App() {
             <Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} />
           </Route>
         </Switch>
+        <PostFormContainer />
+        <AllPostContainer />
         <Footer />
       </Router>
     </>
